@@ -1,0 +1,9 @@
+リセット: clean
+mover実行時間測定
+src -> destにおいて，srcにデータを置いて，destをsetpolicyし，moverを実行
+
+HDD -> SSDの場合
+リセット状態から，write -> setpolicy SSD -> mover 
+データがSSDにある場合は，一度setpolicy 
+
+SSD -> HDDの場合

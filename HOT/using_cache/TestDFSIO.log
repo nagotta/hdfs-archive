@@ -1,0 +1,135 @@
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:21:16 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 2560
+      Throughput mb/sec: 388.64
+ Average IO rate mb/sec: 409.05
+  IO rate std deviation: 102.06
+     Test exec time sec: 18.9
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:21:40 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 2560
+      Throughput mb/sec: 343.49
+ Average IO rate mb/sec: 617.68
+  IO rate std deviation: 628.05
+     Test exec time sec: 19.94
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:22:04 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 2560
+      Throughput mb/sec: 424.54
+ Average IO rate mb/sec: 492.82
+  IO rate std deviation: 202.25
+     Test exec time sec: 19.32
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:23:19 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 2560
+      Throughput mb/sec: 409.01
+ Average IO rate mb/sec: 556.11
+  IO rate std deviation: 333.66
+     Test exec time sec: 18.94
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:23:44 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 2560
+      Throughput mb/sec: 352.37
+ Average IO rate mb/sec: 416.07
+  IO rate std deviation: 215.58
+     Test exec time sec: 19.91
+
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:25:55 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 1280
+      Throughput mb/sec: 391.8
+ Average IO rate mb/sec: 605.46
+  IO rate std deviation: 457.1
+     Test exec time sec: 16.97
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:26:17 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 1280
+      Throughput mb/sec: 549.83
+ Average IO rate mb/sec: 857.09
+  IO rate std deviation: 680.87
+     Test exec time sec: 16
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:27:12 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 1280
+      Throughput mb/sec: 701.75
+ Average IO rate mb/sec: 945.11
+  IO rate std deviation: 637
+     Test exec time sec: 17.41
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:27:33 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 1280
+      Throughput mb/sec: 477.79
+ Average IO rate mb/sec: 494.28
+  IO rate std deviation: 102.04
+     Test exec time sec: 15.86
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 03:28:10 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 1280
+      Throughput mb/sec: 541.46
+ Average IO rate mb/sec: 616.87
+  IO rate std deviation: 225.26
+     Test exec time sec: 16.86
+     
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 04:53:52 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 5120
+      Throughput mb/sec: 241.74
+ Average IO rate mb/sec: 291.15
+  IO rate std deviation: 115.75
+     Test exec time sec: 23.96
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 04:54:30 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 5120
+      Throughput mb/sec: 278.05
+ Average IO rate mb/sec: 311.52
+  IO rate std deviation: 121.86
+     Test exec time sec: 19.24
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 04:55:00 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 5120
+      Throughput mb/sec: 490.33
+ Average IO rate mb/sec: 583.33
+  IO rate std deviation: 310.94
+     Test exec time sec: 17.03
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 04:55:36 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 5120
+      Throughput mb/sec: 399.84
+ Average IO rate mb/sec: 621.68
+  IO rate std deviation: 446.56
+     Test exec time sec: 18.54
+
+----- TestDFSIO ----- : read
+            Date & time: Tue Apr 15 04:56:02 UTC 2025
+        Number of files: 10
+ Total MBytes processed: 5120
+      Throughput mb/sec: 428.77
+ Average IO rate mb/sec: 616.47
+  IO rate std deviation: 442.53
+     Test exec time sec: 19.47

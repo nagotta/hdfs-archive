@@ -1,0 +1,7 @@
+type,date,num_files,total_MB,throughput,avg_io_rate,io_stddev,exec_time
+write,"Tue Apr 15 03:55:29 UTC 2025",10,5120,11.89,82.2,183.87,99.51
+write,"Tue Apr 15 03:57:19 UTC 2025",10,5120,19.87,106.07,218.75,65.29
+write,"Tue Apr 15 03:59:19 UTC 2025",10,5120,14.52,76.93,84.41,104.34
+write,"Tue Apr 15 04:13:16 UTC 2025",20,2560,23.45,150.64,195,52.55
+write,"Tue Apr 15 04:15:24 UTC 2025",20,2560,15.89,78.48,133.67,81.49
+write,"Tue Apr 15 04:16:27 UTC 2025",20,2560,17.7,90.98,117.96,55.52

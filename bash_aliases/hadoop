@@ -1,0 +1,6 @@
+# e.g. alias ll='ls -alF'
+alias hdfsr='hdfs dfsadmin -report'
+# hdfs mover -p /
+# hdfs storagepolicies -setStoragePolicy -path / -policy HOT
+alias hdfslsr='hdfs dfs -ls -R'
+alias hdfsls='hdfs dfs -ls'

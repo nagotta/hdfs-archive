@@ -1,0 +1,95 @@
+```done
+${HADOOP_HOME}/bin/hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.4.1-tests.jar TestDFSIO -D test.build.data=/user/mapred/benchmarks/TestDFSIO -clean
+${HADOOP_HOME}/bin/hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.4.1-tests.jar TestDFSIO -D test.build.data=/user/mapred/benchmarks/TestDFSIO -write -nrFiles 10 -fileSize 256MB
+${HADOOP_HOME}/bin/hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.4.1-tests.jar TestDFSIO -D test.build.data=/user/mapred/benchmarks/TestDFSIO -read -nrFiles 10 -fileSize 256MB
+
+base_cmd="${HADOOP_HOME}/bin/hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.4.1-tests.jar TestDFSIO -D test.build.data=/user/mapred/benchmarks/TestDFSIO"
+options=(-clean -write -read)  # $1
+
+# $1 エラー制御
+if not in options:
+    echo ""  # optionsから選ぶように注意
+    # 終了
+
+# -cleanなら"$base_cmd $1"を実行して実行が終われば終了，optionsを使うこと
+# それ以外なら$2と$3を確認し，$2が数字，$3が数字にMBやKB，GBなどを付けた形であることを確認し，適していなければ注意して終了，なお単位はリストを使うこと
+
+# 上記のifを抜けたなら"$base_cmd $1 -nfFiles $2 -fileSize $3"を実行，実行が終われば終了
+
+-clean
+-write -nrFiles 10 -fileSize 256MB
+-read -nrFiles 10 -fileSize 256MB
+```
+
+# TestDFSIO_results.log整理
+# mkdir
+allssd
+allhdd
+write
+read
+
+
+#
+```auto_move_policy.sh
+move_path="/"
+set $1 hdd or ssd
+if $1 == hdd:
+    valid_policy="HOT"
+elif $1 == ssd:
+    valid_policy="ALL_SSD"
+else:
+    echo エラーの内容
+    exit
+
+r = check_datanodes.shの実行結果
+if $1 != r:
+    if $1 == hdd
+    hdfs storagepolicies -setStoragePolicy -path $move_path -policy $valid_policy
+    hdfs mover -p $move_path
+    ↑の実行が終われば次の処理に進むように，
+
+
+clean-write 7回 read 7回
+```
+
+
+
+# write
+write 10 64MB
+clean
+
+# read
+(oncewrite)
+read 10 64MB
+〃
+
+```
+# $1 write or read, $2 filenum(10や20，数字のみ), $3 filesize(64MBや64GBなど)
+batch_num=7
+process=$1
+filenum=$2
+filesize=$3
+
+processes=(read write)
+if $1 not in processes:
+    echo エラーの内容
+    exit
+
+output_path=logs/$process/$(date +%Y%m%d_%H%M%S)
+
+if process=processes[1]
+    for batch_num回: 
+        exec_testdfsio.sh -clean
+        exec_testdfsio.sh -$process $filenum $filesize >> $output_path
+elif process=processes[0]
+    exec_testdfsio.sh -clean
+    exec_testdfsio.sh -$processes[1] $filenum $filesize >> $output_path
+    for batch_num回:
+        exec_testdfsio.sh -$process $filenum $filesize >> $output_path
+else:
+    echo エラーの内容
+
+```
+
+
+
